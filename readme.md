@@ -1,5 +1,4 @@
 # A Löve file picker
----
 
 Tested on Android and Linux.
 
@@ -12,12 +11,12 @@ local picker = require 'picker'
 
 local selected_file
 picker.open('/', function(selected)
-  selected_file = sel
+  selected_file = selected
   picker.close()
 end)
 ```
 
-# Options
+## Options
 
 ```lua
 picker.width -- default love.graphics.getWidth()
